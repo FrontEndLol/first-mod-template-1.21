@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "first-mod",
+	"version": "${version}",
+	"name": "First Mod",
+	"description": "This is my first Minecraft mod!",
+	"authors": [
+		"Manyeh!"
+	],
+	"contact": {
+		"homepage": "https://manyeh.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/first-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.manyeh.firstmod.FirstMod"
+		],
+		"fabric-datagen": [
+			"net.manyeh.firstmod.FirstModDataGenerator"
+		],
+		"client": [
+			"net.manyeh.firstmod.FirstModClient"
+		]
+	},
+	"mixins": [
+		"first-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
